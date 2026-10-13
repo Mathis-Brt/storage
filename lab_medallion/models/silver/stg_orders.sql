@@ -9,6 +9,7 @@ typed as (
         cast(date as timestamptz) as ordered_at,
         cast(quantity as integer) as quantity,
         lower(trim(product)) as product
+    from source
 )
 
 select *
